@@ -12,6 +12,7 @@ class SingerSongController extends Controller
     {
         $song = Singer::join('singer_songs', 'singer_songs.singer_id', "=", "singers.id")
             ->join('songs', 'songs.id', "=", "singer_songs.song_id")->get();
+            var_dump($song);
         return view('admin.song.listSong', compact('song'));
     }
     public function editSingerSong($song_id, $singer_id)

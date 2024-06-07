@@ -7,21 +7,21 @@
 @section('main-content')
     <div class="main-content row">
         <div class="topic-song" style="display: flex" >
-            {{-- <div class="" style="height:80px;width:300px;background: #6c6c6c;display: flex;margin-right: 40px; border-radius: 10px;">
+            <div class="" style="height:80px;width:300px;background: #6c6c6c;display: flex;margin-right: 40px; border-radius: 10px;">
                 <div style="height: 80px;width: 80px;">
                     <a href="">
                         <img src="https://2.bp.blogspot.com/-bQTld96S_qs/UkP79rKafVI/AAAAAAAAAhU/c4dWVQ1b874/s1600/anh-dep-hinh-nen-thien-nhien-2.jpg" style="height: 100%;width: 100%;border-radius: 10px;" alt="">
                 </div>
                 <label style="padding:25px;color: #fff;">song new</label>
             </a>
-            </div> --}}
+            </div>
         </div>
-        
+
         <div class="row songNew" style="margin: 16px 0;">
-            <h4 class="head-content" style="color: #fff;">nhac mot</h4>
+            <h4 class="head-content" style="color: #fff;">Nhạc mới</h4>
         </div>
         <div class="row songHot" style="margin: 16px 0;">
-            <h4 class="head-content" style="color: #fff;">nhac hot</h4>
+            <h4 class="head-content" style="color: #fff;">Nhạc hot</h4>
         </div>
     </div>
 @endsection

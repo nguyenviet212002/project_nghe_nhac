@@ -59,10 +59,11 @@ const mainApp = {
 
     renderPlaylist: function(arraySong) {
         const listSongNew = arraySong['categorySongnew'].map((song, index) => {
+            console.log(`http://127.0.0.1:8000/${song.image_song}`)
             return `
                      <div class="col-2 playing" data-index="${index}">
                      <div style="padding:14px;">
-                     <img src="${song.image_song}" alt="" style="height:200px;with:250px;object-fit:cover" >
+                     <img src="http://127.0.0.1:8000/${song.image_song}" alt="" style="height:200px;with:250px;object-fit:cover" >
                      <div style="color: #fff;">
                          <h5>${song.name_song}</h5>
                          <p>${song.name_singer}</p>

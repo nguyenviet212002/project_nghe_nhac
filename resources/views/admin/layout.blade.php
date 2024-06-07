@@ -76,19 +76,19 @@
                             data-bs-toggle="dropdown"  >
                             <i class="icon-mail icon-lg"></i>
                         </a>
-                        
+
                     </li>
                     <div id="message" style="background: #f8f6f6;border: 1px solid; padding: 30px;top: 80px;right: 100px ;position: absolute;display: none" >
                         <h1 style="font-size: 20px; padding-bottom: 10px">Tin nhắn </h1>
                         <div >
-                            @foreach ($message as $data)
-                            <h4>{{$data->name}}</h4>
-                            <p style="  white-space: nowrap;width: 250px;overflow: hidden;text-overflow: ellipsis;">{{$data->message}}</p>
-                            @endforeach
+                            {{-- @foreach ($message as $data) --}}
+                            {{-- <h4>{{$data->name}}</h4> --}}
+                            {{-- <p style="  white-space: nowrap;width: 250px;overflow: hidden;text-overflow: ellipsis;">{{$data->message}}</p> --}}
+                            {{-- @endforeach --}}
                         </div>
-                       
+
                     </div>
-                  
+
 
                     <li class="nav-item dropdown d-none d-lg-block user-dropdown">
                         <a class="nav-link" id="UserDropdown" href="#" data-bs-toggle="dropdown"
@@ -350,10 +350,10 @@
         function message(){
          clicks += 1;
          if (clicks%2 !== 0 ) {
-            document.querySelector('#message').style.display = 'block' 
+            document.querySelector('#message').style.display = 'block'
          }
          if (clicks%2 == 0) {
-            document.querySelector('#message').style.display = 'none' 
+            document.querySelector('#message').style.display = 'none'
          }
         }
     </script>

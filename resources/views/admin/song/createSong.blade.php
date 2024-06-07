@@ -13,7 +13,7 @@
                             <option value="{{$singer->name_singer}}">{{$singer->name_singer}}</option>
                              @endforeach
                         </select>
-                            
+
                         @error('nameSinger')
                             <span style="color: red">{{ $message }}</span>
                         @enderror
@@ -53,7 +53,7 @@
                         <input type="text" class="form-control" id="exampleInputConfirmPassword1"
                             name="lyric">
                     </div>
-                   
+
                     <button type="submit" class="btn btn-primary me-2">Submit</button>
                     <button class="btn btn-light">Cancel</button>
                 </form>
